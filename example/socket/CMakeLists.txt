@@ -1,0 +1,9 @@
+# implement the daytime protocol using tcp
+ADD_EXECUTABLE(sync_tcp_daytime_client sync_tcp_daytime_client.cpp)
+TARGET_LINK_LIBRARIES(sync_tcp_daytime_client pthread)
+
+ADD_EXECUTABLE(sync_tcp_daytime_server sync_tcp_daytime_server.cpp)
+TARGET_LINK_LIBRARIES(sync_tcp_daytime_server pthread)
+
+ADD_EXECUTABLE(async_tcp_daytime_server async_tcp_daytime_server.cpp)
+TARGET_LINK_LIBRARIES(async_tcp_daytime_server pthread)
